@@ -1,10 +1,9 @@
 import classes from "./Auth.module.scss";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { login } from "../../store/authSlice";
 
 const Auth = () => {
   const dispatch = useDispatch();
-  const authState = useSelector((state) => state.auth);
 
   const onLoginHandler = (event) => {
     event.preventDefault();
